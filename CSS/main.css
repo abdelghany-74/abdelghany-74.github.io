@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: #8A5844;
+  height: 100vh;
+}
+
+/*       Login Box          */
+.login-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+}
+
+.login-box h2 {
+  margin: 0 0 30px;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+}
+
+.login-box .user-box {
+  position: relative;
+}
+
+.login-box .user-box textarea {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+
+.user-box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: .5;
+}
+
+.login-box .user-box textarea:focus~label,
+.login-box .user-box textarea:valid~label {
+  top: -20px;
+  left: 0;
+  color: #864833;
+  font-size: 12px;
+}
+
+.login-box form button {
+  width: 100%;
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #ddd;
+  background-color: #864833;
+  border-radius: 30px;
+  font-size: 16px;
+  -webkit-text-decoration: none;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 1s;
+  margin-top: 40px;
+  letter-spacing: 2px;
+}
+
+form button:hover {
+  background-color: #8b7973;
+  color: #ddd;
+  box-shadow: 0 0 5px #35211b,
+    0 0 25px #35211b,
+    0 0 50px #35211b,
+    0 0 100px #35211b;
+  cursor: pointer;
+}
